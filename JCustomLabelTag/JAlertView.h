@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JAlertModel.h"
 @interface JAlertView : UIView
 
+@property (nonatomic, strong) JAlertModel *model;
+- (void)show;
 @end

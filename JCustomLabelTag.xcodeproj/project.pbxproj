@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		A52D7CC71EEE75690096D65E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A52D7CC61EEE75690096D65E /* main.m */; };
 		A52D7CCA1EEE75690096D65E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A52D7CC91EEE75690096D65E /* AppDelegate.m */; };
-		A52D7CCD1EEE75690096D65E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52D7CCC1EEE75690096D65E /* ViewController.m */; };
+		A52D7CCD1EEE75690096D65E /* JController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52D7CCC1EEE75690096D65E /* JController.m */; };
 		A52D7CD01EEE75690096D65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52D7CCE1EEE75690096D65E /* Main.storyboard */; };
 		A52D7CD21EEE75690096D65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52D7CD11EEE75690096D65E /* Assets.xcassets */; };
 		A52D7CD51EEE75690096D65E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52D7CD31EEE75690096D65E /* LaunchScreen.storyboard */; };
 		A52D7CE01EEE75690096D65E /* JCustomLabelTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A52D7CDF1EEE75690096D65E /* JCustomLabelTagTests.m */; };
 		A52D7CEB1EEE75690096D65E /* JCustomLabelTagUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A52D7CEA1EEE75690096D65E /* JCustomLabelTagUITests.m */; };
+		A52D7CFA1EEE76570096D65E /* JLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = A52D7CF91EEE76570096D65E /* JLabelView.m */; };
+		A52D7D0B1EEE8CFA0096D65E /* JAddLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52D7D0A1EEE8CFA0096D65E /* JAddLabelController.m */; };
+		A5B078251EF01BAA0087C113 /* JAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B078241EF01BAA0087C113 /* JAlertView.m */; };
+		A5B078281EF022110087C113 /* JAlertModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B078271EF022110087C113 /* JAlertModel.m */; };
+		A5B078311EF1175D0087C113 /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = A5B078301EF1175D0087C113 /* text.txt */; };
+		F5AF24100851E662E35B72C7 /* Pods_JCustomLabelTag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18787DB664133191ABBF1D8C /* Pods_JCustomLabelTag.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18787DB664133191ABBF1D8C /* Pods_JCustomLabelTag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCustomLabelTag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FFB7ADCE873B8AF3213CEC /* Pods-JCustomLabelTag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCustomLabelTag.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCustomLabelTag/Pods-JCustomLabelTag.release.xcconfig"; sourceTree = "<group>"; };
 		A52D7CC21EEE75690096D65E /* JCustomLabelTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCustomLabelTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52D7CC61EEE75690096D65E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A52D7CC81EEE75690096D65E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A52D7CC91EEE75690096D65E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A52D7CCB1EEE75690096D65E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A52D7CCC1EEE75690096D65E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A52D7CCB1EEE75690096D65E /* JController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JController.h; sourceTree = "<group>"; };
+		A52D7CCC1EEE75690096D65E /* JController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JController.m; sourceTree = "<group>"; };
 		A52D7CCF1EEE75690096D65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A52D7CD11EEE75690096D65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52D7CD41EEE75690096D65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +59,17 @@
 		A52D7CE61EEE75690096D65E /* JCustomLabelTagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCustomLabelTagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52D7CEA1EEE75690096D65E /* JCustomLabelTagUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCustomLabelTagUITests.m; sourceTree = "<group>"; };
 		A52D7CEC1EEE75690096D65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52D7CF81EEE76570096D65E /* JLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLabelView.h; sourceTree = "<group>"; };
+		A52D7CF91EEE76570096D65E /* JLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLabelView.m; sourceTree = "<group>"; };
+		A52D7D021EEE81FB0096D65E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A52D7D091EEE8CFA0096D65E /* JAddLabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAddLabelController.h; sourceTree = "<group>"; };
+		A52D7D0A1EEE8CFA0096D65E /* JAddLabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAddLabelController.m; sourceTree = "<group>"; };
+		A5B078231EF01BAA0087C113 /* JAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAlertView.h; sourceTree = "<group>"; };
+		A5B078241EF01BAA0087C113 /* JAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAlertView.m; sourceTree = "<group>"; };
+		A5B078261EF022110087C113 /* JAlertModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAlertModel.h; sourceTree = "<group>"; };
+		A5B078271EF022110087C113 /* JAlertModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAlertModel.m; sourceTree = "<group>"; };
+		A5B078301EF1175D0087C113 /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
+		EB9C8784598587E80D47E0EF /* Pods-JCustomLabelTag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCustomLabelTag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCustomLabelTag/Pods-JCustomLabelTag.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5AF24100851E662E35B72C7 /* Pods_JCustomLabelTag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BFD832CE627DB9807C3FB23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB9C8784598587E80D47E0EF /* Pods-JCustomLabelTag.debug.xcconfig */,
+				23FFB7ADCE873B8AF3213CEC /* Pods-JCustomLabelTag.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A52D7CB91EEE75690096D65E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 				A52D7CDE1EEE75690096D65E /* JCustomLabelTagTests */,
 				A52D7CE91EEE75690096D65E /* JCustomLabelTagUITests */,
 				A52D7CC31EEE75690096D65E /* Products */,
+				8BFD832CE627DB9807C3FB23 /* Pods */,
+				DAC38282BFF5DB32A28661E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +132,12 @@
 		A52D7CC41EEE75690096D65E /* JCustomLabelTag */ = {
 			isa = PBXGroup;
 			children = (
+				A5B0782B1EF0292C0087C113 /* model */,
+				A5B0782A1EF0292A0087C113 /* view */,
+				A5B078291EF029250087C113 /* controller */,
 				A52D7CC81EEE75690096D65E /* AppDelegate.h */,
 				A52D7CC91EEE75690096D65E /* AppDelegate.m */,
-				A52D7CCB1EEE75690096D65E /* ViewController.h */,
-				A52D7CCC1EEE75690096D65E /* ViewController.m */,
+				A52D7D021EEE81FB0096D65E /* PrefixHeader.pch */,
 				A52D7CCE1EEE75690096D65E /* Main.storyboard */,
 				A52D7CD11EEE75690096D65E /* Assets.xcassets */,
 				A52D7CD31EEE75690096D65E /* LaunchScreen.storyboard */,
@@ -140,6 +173,46 @@
 			path = JCustomLabelTagUITests;
 			sourceTree = "<group>";
 		};
+		A5B078291EF029250087C113 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A52D7CCB1EEE75690096D65E /* JController.h */,
+				A52D7CCC1EEE75690096D65E /* JController.m */,
+				A52D7D091EEE8CFA0096D65E /* JAddLabelController.h */,
+				A52D7D0A1EEE8CFA0096D65E /* JAddLabelController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		A5B0782A1EF0292A0087C113 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A52D7CF81EEE76570096D65E /* JLabelView.h */,
+				A52D7CF91EEE76570096D65E /* JLabelView.m */,
+				A5B078231EF01BAA0087C113 /* JAlertView.h */,
+				A5B078241EF01BAA0087C113 /* JAlertView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		A5B0782B1EF0292C0087C113 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A5B078261EF022110087C113 /* JAlertModel.h */,
+				A5B078271EF022110087C113 /* JAlertModel.m */,
+				A5B078301EF1175D0087C113 /* text.txt */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		DAC38282BFF5DB32A28661E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18787DB664133191ABBF1D8C /* Pods_JCustomLabelTag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A52D7CEF1EEE75690096D65E /* Build configuration list for PBXNativeTarget "JCustomLabelTag" */;
 			buildPhases = (
+				91CED712B09DEC18E710D0DF /* [CP] Check Pods Manifest.lock */,
 				A52D7CBE1EEE75690096D65E /* Sources */,
 				A52D7CBF1EEE75690096D65E /* Frameworks */,
 				A52D7CC01EEE75690096D65E /* Resources */,
+				C77E413878A01CB542820DF1 /* [CP] Embed Pods Frameworks */,
+				3186546F320F7EC381AB84F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +328,7 @@
 				A52D7CD51EEE75690096D65E /* LaunchScreen.storyboard in Resources */,
 				A52D7CD21EEE75690096D65E /* Assets.xcassets in Resources */,
 				A52D7CD01EEE75690096D65E /* Main.storyboard in Resources */,
+				A5B078311EF1175D0087C113 /* text.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,12 +348,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3186546F320F7EC381AB84F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCustomLabelTag/Pods-JCustomLabelTag-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91CED712B09DEC18E710D0DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C77E413878A01CB542820DF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCustomLabelTag/Pods-JCustomLabelTag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A52D7CBE1EEE75690096D65E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52D7CCD1EEE75690096D65E /* ViewController.m in Sources */,
+				A5B078251EF01BAA0087C113 /* JAlertView.m in Sources */,
+				A5B078281EF022110087C113 /* JAlertModel.m in Sources */,
+				A52D7CFA1EEE76570096D65E /* JLabelView.m in Sources */,
+				A52D7D0B1EEE8CFA0096D65E /* JAddLabelController.m in Sources */,
+				A52D7CCD1EEE75690096D65E /* JController.m in Sources */,
 				A52D7CCA1EEE75690096D65E /* AppDelegate.m in Sources */,
 				A52D7CC71EEE75690096D65E /* main.m in Sources */,
 			);
@@ -425,25 +554,31 @@
 		};
 		A52D7CF01EEE75690096D65E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9C8784598587E80D47E0EF /* Pods-JCustomLabelTag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q27ZRZ24S6;
+				GCC_PREFIX_HEADER = JCustomLabelTag/PrefixHeader.pch;
 				INFOPLIST_FILE = JCustomLabelTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juju.JCustomLabelTag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
 		A52D7CF11EEE75690096D65E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23FFB7ADCE873B8AF3213CEC /* Pods-JCustomLabelTag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q27ZRZ24S6;
+				GCC_PREFIX_HEADER = JCustomLabelTag/PrefixHeader.pch;
 				INFOPLIST_FILE = JCustomLabelTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juju.JCustomLabelTag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
@@ -516,6 +651,7 @@
 				A52D7CF11EEE75690096D65E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A52D7CF21EEE75690096D65E /* Build configuration list for PBXNativeTarget "JCustomLabelTagTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +660,7 @@
 				A52D7CF41EEE75690096D65E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A52D7CF51EEE75690096D65E /* Build configuration list for PBXNativeTarget "JCustomLabelTagUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +669,7 @@
 				A52D7CF71EEE75690096D65E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

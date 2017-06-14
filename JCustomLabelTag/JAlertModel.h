@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface JAlertModel : NSObject
-
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *desc;
+@property (nonatomic, copy) NSString *detail;
+@property (nonatomic, copy) NSString *alignText;
 @end

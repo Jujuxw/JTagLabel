@@ -10,4 +10,10 @@
 
 @interface JLabel : UILabel
 
+//@property (nonatomic, copy) void(^ clickLabel)(NSInteger labelTag);
+//
+//- (void)updateWithString:(id)text
+//      constrainedToWidth:(CGFloat)maxWidth
+//                 padding:(CGSize)padding
+//            minimumWidth:(CGFloat)minimumWidth;
 @end

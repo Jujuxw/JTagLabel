@@ -10,4 +10,6 @@
 
 @interface JAddLabelController : UIViewController
 
+@property (nonatomic, copy) void(^ returnText)(NSString *text);
+
 @end
