@@ -84,7 +84,7 @@
         self.backView = nil;
     }];
 }
-
+//显示弹出框
 - (void)show {
     UIView *keywindow = [[UIApplication sharedApplication] keyWindow];
     [keywindow addSubview:self];

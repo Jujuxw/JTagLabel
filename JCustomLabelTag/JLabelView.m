@@ -10,7 +10,6 @@
 
 #define LABEL_MARGIN_DEFAULT 5.0f
 #define BOTTOM_MARGIN_DEFAULT 10.0f
-#define FONT_SIZE_DEFAULT 13.0f
 #define HORIZONTAL_PADDING_DEFAULT 8.0f
 #define VERTICAL_PADDING_DEFAULT 6.0f
 #define TEXT_COLOR [UIColor blackColor]
@@ -33,7 +32,7 @@
     }
     return self;
 }
-
+//初始化标签数据
 - (void)setLabel:(NSArray *)labelArray {
     self.tagArray = [[NSArray alloc] initWithArray:labelArray];
 //    self.sizeFit = CGSizeZero;
@@ -45,19 +44,27 @@
         }
         [self rigthAlign];
     }
-//    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.sizeFit.width,self.sizeFit.height);
 }
-
+//改变对齐方式
 - (void)setLeftAlign:(BOOL)leftAlign {
     isLeftAlign = leftAlign;
 }
 
+/*
+ *右对齐
+ *实现原理：
+ *1、遍历标签数组，根据每一个text计算每个标签的宽高
+ *2、每一个插入的标签靠右间距20，再将前面的标签向左位移当前标签的宽和margin
+ *3、累计每个标签的宽度的总和，如果大于屏宽就换行
+ */
 - (void)rigthAlign {
+//    如果页面有JLabel，则清除
     for (UIView *subview in [self subviews]) {
         if ([subview isKindOfClass:[JLabel class]]) {
         }
         [subview removeFromSuperview];
     }
+//    页面添加标签
     for (id text in self.tagArray) {
         JLabel *label = [[JLabel alloc] init];
         label.label.text = text;
@@ -109,7 +116,13 @@
         tag++;
     }
 }
-
+/*
+ *左对齐
+ *实现原理：
+ *1、遍历标签数组，根据每一个text计算每个标签的宽高
+ *2、每一个插入的标签位置局上个标签右移当前标签的宽和margin
+ *3、累计每个当前标签位置，如果大于屏宽就换行
+ */
 - (void)display {
     NSMutableArray *tagViews = [NSMutableArray array];
     for (UIView *subview in [self subviews]) {
@@ -166,19 +179,6 @@
         tag++;
         [self addSubview:label];
     }
-    self.sizeFit = CGSizeMake(self.frame.size.width, previousFrame.origin.y + previousFrame.size.height + BOTTOM_MARGIN_DEFAULT + 1.0f);
-    self.contentSize = self.sizeFit;
-}
-
-- (CGSize)fittedSize
-{
-    return _sizeFit;
-}
-
-- (void)scrollToBottomAnimated:(BOOL)animated
-{
-    [self setContentOffset:CGPointMake(0.0, self.contentSize.height - self.bounds.size.height + self.contentInset.bottom)
-                  animated:animated];
 }
 
 @end
@@ -222,7 +222,7 @@
 }
 /*
  *
- *点击每个label的相应事件
+ *点击每个label的响应事件
  *
  */
 - (void)chooseLabel:(UITapGestureRecognizer *)gesture {
@@ -238,7 +238,11 @@
         self.isSelected = NO;
     }
 }
-
+/*
+ *
+ *删除标签方法
+ *
+ */
 - (void)deleteLabel:(UILongPressGestureRecognizer *)gesture {
     JLabel *label = (JLabel *)gesture.view;
     if (self.deleteLabel) {

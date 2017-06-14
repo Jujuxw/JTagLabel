@@ -44,7 +44,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.textField resignFirstResponder];
 }
-
+//回调textField输入的文字
 - (void)addLabelWithTag:(id)sender {
     if (self.returnText) {
         self.returnText(self.textField.text);
