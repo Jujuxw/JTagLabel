@@ -122,7 +122,7 @@
 }
 
 - (void)addLabelView:(BOOL)leftAlign {
-    self.labelView = [[JLabelView alloc] initWithFrame:CGRectMake(0, 150, KSIZE.width, KSIZE.height)];
+    self.labelView = [[JLabelView alloc] initWithFrame:CGRectMake(0, 150, KSIZE.width, KSIZE.height - 150)];
     
     [self.labelView setLeftAlign:leftAlign];
     [self.labelView setLabel:[NSMutableArray arrayWithContentsOfFile:filePath]];

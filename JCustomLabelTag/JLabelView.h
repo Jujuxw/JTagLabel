@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIView  *view;
 @property (nonatomic, strong) NSArray *tagArray;
+@property (nonatomic, assign) CGSize  sizeFit;
 @property (nonatomic, strong) void(^deleteLabel)(NSInteger tag);
 
 - (void)setLabel:(NSArray *)labelArray;

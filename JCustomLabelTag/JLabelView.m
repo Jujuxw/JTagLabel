@@ -28,6 +28,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self addSubview:self.view];
+        [self setScrollEnabled:YES];
         array = [[NSMutableArray alloc] init];
     }
     return self;
@@ -35,7 +36,8 @@
 //初始化标签数据
 - (void)setLabel:(NSArray *)labelArray {
     self.tagArray = [[NSArray alloc] initWithArray:labelArray];
-//    self.sizeFit = CGSizeZero;
+    self.sizeFit = CGSizeZero;
+    [self setShowsVerticalScrollIndicator:NO];
     if (isLeftAlign) {
         [self display];
     }else {
@@ -92,7 +94,7 @@
         };
         newRect = label.frame;
         width += (newRect.size.width + LABEL_MARGIN_DEFAULT);
-        if (width >= KSIZE.width) {
+        if (width >= KSIZE.width - 20) {
             tmp = i;
             width = newRect.size.width + LABEL_MARGIN_DEFAULT;
             originY += (newRect.size.height + BOTTOM_MARGIN_DEFAULT);
@@ -115,6 +117,8 @@
         [label setTag:tag];
         tag++;
     }
+    self.sizeFit = CGSizeMake(self.frame.size.width, newRect.origin.y + newRect.size.height + BOTTOM_MARGIN_DEFAULT + 1.0f);
+    self.contentSize = self.sizeFit;
 }
 /*
  *左对齐
@@ -159,7 +163,7 @@
         
         if (gotPreviousFrame) {
             CGRect newRect = CGRectZero;
-            if (previousFrame.origin.x + previousFrame.size.width + label.frame.size.width + LABEL_MARGIN_DEFAULT > self.frame.size.width) {
+            if (previousFrame.origin.x + previousFrame.size.width + label.frame.size.width + LABEL_MARGIN_DEFAULT >= self.frame.size.width) {
                 newRect.origin = CGPointMake(20, previousFrame.origin.y + label.frame.size.height + BOTTOM_MARGIN_DEFAULT);
             }else {
                 newRect.origin = CGPointMake(previousFrame.origin.x + previousFrame.size.width + LABEL_MARGIN_DEFAULT, previousFrame.origin.y);
@@ -179,6 +183,8 @@
         tag++;
         [self addSubview:label];
     }
+    self.sizeFit = CGSizeMake(self.frame.size.width, previousFrame.origin.y + previousFrame.size.height + BOTTOM_MARGIN_DEFAULT + 1.0f);
+    self.contentSize = self.sizeFit;
 }
 
 @end
@@ -271,7 +277,7 @@
     textSize.height += padding.height*2;
     
     if (!leftAlign) {
-        self.frame = CGRectMake(KSIZE.width - 20 - textSize.width - padding.width * 2, 0, textSize.width+padding.width*2, textSize.height);
+        self.frame = CGRectMake(KSIZE.width - 20 - textSize.width - padding.width*2, 0, textSize.width+padding.width*2, textSize.height);
         self.label.frame = CGRectMake(padding.width, 0, MIN(textSize.width, self.frame.size.width), textSize.height);
     }else {
         self.frame = CGRectMake(20, 0, textSize.width+padding.width*2, textSize.height);
